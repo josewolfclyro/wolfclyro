@@ -1,13 +1,13 @@
 import React from "react";
-import PicPerfil from "/Users/jose/react-cv-app/src/assets/picperfill.png";
-import Logo from "/Users/jose/react-cv-app/src/assets/logo.png";
-import iconos from "/Users/jose/react-cv-app/src/assets/react.png";
-import iconos2 from "/Users/jose/react-cv-app/src/assets/python.png";
-import iconos3 from "/Users/jose/react-cv-app/src/assets/java.png";
-import iconos4 from "/Users/jose/react-cv-app/src/assets/tail.png";
-import iconos5 from "/Users/jose/react-cv-app/src/assets/html.png";
-import iconos6 from "/Users/jose/react-cv-app/src/assets/css.png";
-import iconos7 from "/Users/jose/react-cv-app/src/assets/kotlin.png";
+import PicPerfil from "../../assets/picperfill.png";
+import Logo from "../../assets/logo.png";
+import iconos from "../../assets/react.png";
+import iconos2 from "../../assets/python.png";
+import iconos3 from "../../assets/java.png";
+import iconos4 from "../../assets/tail.png";
+import iconos5 from "../../assets/html.png";
+import iconos6 from "../../assets/css.png";
+import iconos7 from "../../assets/kotlin.png";
 
 export default function Hero() {
   return (
@@ -15,32 +15,32 @@ export default function Hero() {
       <section id="Home">
         {/* texto y descripcion  */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center min-h-screen">
-          <div className="pt-10 pl-4 ">
+          <div className="pt-10 pl-4 flex flex-col items-center md:items-start">
             <img
               src={Logo}
               alt="Logo"
-              className=" w-40 h-40 rounded-full object-cover shadow-2xl  "
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-2xl"
             />{" "}
-            <p className=" text-lg max-w-md font-mono text-gray-800 mt-4">
+            <h1 className="text-base md:text-lg max-w-md font-bold text-gray-800 mt-4 text-center md:text-left">
               Hola, soy Jose un programador en proceso de crecimiento,
               apasionado por la tecnología y el aprendizaje constante. Cada día
               doy un paso más en mi desarrollo profesional, con un enfoque
-              especial en ciberseguridad y el uso de tecnologías como React,
+              especial en ciberseguridad y el uso de tecnologías como ReactJs,
               React Native y Python. Me motiva construir soluciones prácticas,
               seguras y modernas, siempre buscando mejorar mis habilidades y
               mantenerme actualizado con las últimas tendencias del desarrollo.
-            </p>
+            </h1>
           </div>
           {/* foto de perfil */}
           <div className="pt-30 flex justify-items-end pr-5 gap-20">
-            <aside class=" bg-black text-white p-4  rounded-lg w-full max-w-sm  font-mono">
-              <div class="flex justify-between items-center">
-                <div class="flex space-x-2 text-red-500">
-                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            <aside className="bg-black text-white p-4 rounded-lg w-full max-w-sm font-mono">
+              <div className="flex justify-between items-center">
+                <div className="flex space-x-2 text-red-500">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <p class="text-sm">bash</p>
+                <p className="text-sm">bash</p>
               </div>
               <div class="mt-4">
                 <p class="text-green-400">
@@ -49,7 +49,7 @@ export default function Hero() {
                 <div className="grid grid-cols-2 gap-4  items-center ">
                   <img
                     src={iconos}
-                    alt="react"
+                    alt="ReactJs"
                     className=" w-8 h-8 rounded-full object-cover"
                   />
                   <p>
@@ -102,7 +102,7 @@ export default function Hero() {
                 <img
                   src={PicPerfil}
                   alt="Foto de perfil"
-                  className="w-40 h-40 rounded-full object-cover shadow-lg mt-20 cursor-pointer"
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg mt-20 cursor-pointer"
                 />
                 <p className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-xl font-bold text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Jose Ruiz

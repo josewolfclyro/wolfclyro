@@ -4,9 +4,31 @@
 
 
 
+
 body {
     font-family: "Poppins", sans-serif;
 
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Adjust spacing and padding */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Adjust element dimensions */
+    .button {
+        padding: 10px 15px;
+    }
 }
 html {
     scroll-behavior: smooth;

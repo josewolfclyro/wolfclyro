@@ -1,5 +1,5 @@
 import { Navbar } from "./components/nav bar/Navbar";
-import Hero from "./components/hero/hero";
+import Hero from "./components/Hero/Hero.jsx";
 import Fondo from "./assets/fondo3.jpg";
 
 function app() {
