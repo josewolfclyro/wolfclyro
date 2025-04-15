@@ -88,9 +88,9 @@ export const Navbar = () => {
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <ul className="flex-col px-4 py-4 bg-gray-200">
+        <ul className="flex-col px-4 py-4 bg-white">
           {navbarLinks.map((links) => (
-            <li key={links.id} className="py-2 text-center">
+            <li key={links.id} className="py-2 text-center font-bold">
               <a
                 className="hover:text-[#A6A6A6] transition-transform hover:scale-110 transform inline-block duration-300"
                 href={links.link}
@@ -100,13 +100,13 @@ export const Navbar = () => {
             </li>
           ))}
         </ul>
-        <ul className="flex justify-center gap-4 px-4 py-4 border-t border-gray-300 bg-gray-200">
+        <ul className="flex justify-center gap-4 px-4 py-4 border-t border-white bg-white">
           {navbarRedes.map((links) => (
             <li key={links.id}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#A6A6A6] transition-transform hover:scale-110 transform inline-block duration-300"
+                className="font-bold hover:text-[#A6A6A6] transition-transform hover:scale-110 transform inline-block duration-300"
                 href={links.link}
               >
                 <i className={links.icon}></i>

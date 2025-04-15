@@ -1,8 +1,10 @@
 import { Navbar } from "./components/nav bar/Navbar";
 import Hero from "./components/Hero/Hero.jsx";
 import Fondo from "./assets/fondo3.jpg";
-
+import "./index.css";
 function app() {
+  
+  
   const bgImagen = {
     backgroundImage: `url(${Fondo})`,
     backgroundRepeat: "no-repeat",
@@ -14,6 +16,8 @@ function app() {
     <div style={bgImagen} className="overflow-hidden min-h-screen">
       <Navbar />
       <Hero />
+      
+      
     </div>
   );
 }
