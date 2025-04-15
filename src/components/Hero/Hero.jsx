@@ -1,4 +1,4 @@
-jsx
+
 import React from "react";
 import PicPerfil from "../../assets/picperfill.png";
 import Logo from "../../assets/logo.png";
