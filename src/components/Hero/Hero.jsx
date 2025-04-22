@@ -111,24 +111,24 @@ export default function Hero() {
                   src={PicPerfil}
                   alt="author avatar"
                 />
-                <div class="space-y-2">
-                  <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
-                    <h3 class="text-white">Jose Ruiz</h3>
-                    <p class="text-green-400 font-mono">Dev en desarrollor</p>
-                    <div class="flex justify-center mt-5 space-x-5">
+                <div className="space-y-2">
+                  <div className="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
+                    <h3 className="text-white">Jose Ruiz</h3>
+                    <p className="text-green-400 font-mono">Dev en desarrollor</p>
+                    <div className="flex justify-center mt-5 space-x-5">
                       <a
                         href="https://www.instagram.com/josesixx20/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="inline-block text-gray-400"
                       >
-                        <span class="sr-only">Instagram</span>
+                        <span className="sr-only">Instagram</span>
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
                           stroke-width="0"
                           viewBox="0 0 448 512"
-                          class="w-10 h-10 text-gray-400 hover:text-gray-100"
+                          className="w-10 h-10 text-gray-400 hover:text-gray-100"
                           height="1em"
                           width="1em"
                           xmlns="http://www.w3.org/2000/svg"
@@ -140,15 +140,15 @@ export default function Hero() {
                         href="https://github.com/josewolfclyro"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-block text-gray-400"
+                        className="inline-block text-gray-400"
                       >
-                        <span class="sr-only">GitHub</span>
+                        <span className="sr-only">GitHub</span>
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
                           stroke-width="0"
                           viewBox="0 0 496 512"
-                          class="w-10 h-10 text-gray-400 hover:text-gray-100"
+                          className="w-10 h-10 text-gray-400 hover:text-gray-100"
                           height="1em"
                           width="1em"
                           xmlns="http://www.w3.org/2000/svg"
@@ -162,13 +162,13 @@ export default function Hero() {
                         rel="noopener noreferrer"
                         class="inline-block text-gray-400"
                       >
-                        <span class="sr-only">Linkedin</span>
+                        <span className="sr-only">Linkedin</span>
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
                           stroke-width="0"
                           viewBox="0 0 448 512"
-                          class="w-10 h-10 text-gray-400 hover:text-gray-100"
+                          className="w-10 h-10 text-gray-400 hover:text-gray-100"
                           height="1em"
                           width="1em"
                           xmlns="http://www.w3.org/2000/svg"
@@ -179,9 +179,9 @@ export default function Hero() {
                     </div>
 
                     <div className="flex flex-col gap-4">
-                      <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                      <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
                         <svg
-                          class="fill-current w-4 h-4 mr-2"
+                          className="fill-current w-4 h-4 mr-2"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                         >
@@ -191,10 +191,10 @@ export default function Hero() {
                         <span>Ver cv pdf</span>
                         </a>
                       </button>
-                      <button  class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded flex items-center justify-center gap-2 text-center" onClick={handleEmailClick}>
+                      <button  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded flex items-center justify-center gap-2 text-center" onClick={handleEmailClick}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6 text-blue-400"
+                          className="h-6 w-6 text-blue-400"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -249,7 +249,7 @@ export default function Hero() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <button className="flex items-center gap-2 mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+          <button className="flex items-center gap-2 mx-auto mt-6 text-white bg-blue-600 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
             <i className="bi bi-github"></i>
             Repositorio
           </button>
