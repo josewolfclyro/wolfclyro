@@ -10,6 +10,7 @@ import iconos5 from "../../assets/html.png";
 import iconos6 from "../../assets/css.png";
 import iconos7 from "../../assets/kotlin.png";
 import cv from "./../../assets/cv.pdf";
+import porta from "../../assets/printporta.jpg"
 
 export default function Hero() {
   const handleEmailClick = () => {
@@ -103,7 +104,7 @@ export default function Hero() {
                 </div>
               </div>
             </aside>
-            <div class="w-96 px-6 py-6  text-center bg-gray-800 rounded-lg lg:mt-0 xl:px-10 ml-4 ">
+            <div class="w-96 px-6 py-6  text-center bg-black rounded-lg lg:mt-0 xl:px-10 ml-4 ">
               <div class="space-y-4 xl:space-y-6">
                 <img
                   class="mx-auto rounded-full h-36 w-36"
@@ -113,7 +114,7 @@ export default function Hero() {
                 <div class="space-y-2">
                   <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
                     <h3 class="text-white">Jose Ruiz</h3>
-                    <p class="text-indigo-300">Dev en desarrollor</p>
+                    <p class="text-green-400 font-mono">Dev en desarrollor</p>
                     <div class="flex justify-center mt-5 space-x-5">
                       <a
                         href="https://www.instagram.com/josesixx20/"
@@ -217,8 +218,113 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <section id="contacto">contactos</section>
-      <section id="Proyectos"> proyectos </section>
+      <section id="contacto"></section>
+      <section id="Proyectos" className="text-gray-600 body-font">
+  <h1 className="text-black font-bold text-2xl text-center">Proyectos</h1>
+  <div className="container px-6 py-24 mx-auto">
+    <div className="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div className="sm:w-1/2 mb-10 px-4">
+        <div className="rounded-lg h-64 overflow-hidden">
+          <img 
+            alt="content"
+            className="hover:text-[#070707] transition-transform hover:scale-110 transform inline-block duration-300 object-cover object-center h-full w-full"
+            src={porta}
+          />
+        </div>
+        <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+          Portafolio
+        </h2>
+        <p className="leading-relaxed text-base">
+          Proyecto de portafolio propio.
+        </p>
+
+        {/* Contenedor de los íconos alineados */}
+        <div className="flex justify-center items-center gap-4 mt-4">
+          <img src={iconos} alt="Icono 1" className="w-10 h-10" />
+          <img src={iconos4} alt="Icono 2" className="w-10 h-10" />
+        </div>
+
+        <a
+          href="https://github.com/josewolfclyro/wolfclyro"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <button className="flex items-center gap-2 mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+            <i className="bi bi-github"></i>
+            Repositorio
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer className="text-gray-600 body-font bg-white">
+  <div className="container px-5 py-8 mx-auto flex flex-col sm:flex-row items-center justify-between">
+    
+    {/* Logo */}
+    <a href="#Home" className="flex items-center text-gray-900 mb-4 sm:mb-0">
+      <img 
+        src={Logo} 
+        alt="logo" 
+        className="w-[100px] hover:scale-110 transition-transform duration-300" 
+      />
+    </a>
+
+    {/* Texto de copyright */}
+    <p className="text-sm text-gray-500 text-center sm:text-left">
+      © 2025 Jose Ruiz
+    </p>
+
+    {/* Íconos sociales */}
+    <div className="flex justify-center sm:justify-start gap-4 mt-4 sm:mt-0">
+      
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/josesixx20/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-500 hover:text-gray-800 transition-colors"
+      >
+        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+        </svg>
+      </a>
+
+      {/* LinkedIn */}
+      <a
+        href="https://www.linkedin.com/in/wolfclyro"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-500 hover:text-gray-800 transition-colors"
+      >
+        <svg fill="currentColor" className="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+
+      {/* GitHub */}
+      <a
+        href="https://github.com/josewolfclyro"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-black hover:text-gray-800 transition-colors"
+      >
+        <svg
+          fill="currentColor"
+          viewBox="0 0 496 512"
+          className="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6... (truncado para brevedad)" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
     </main>
   );
 }
