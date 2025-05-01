@@ -219,32 +219,31 @@ export default function Hero() {
         </div>
       </section>
       <section id="contacto"></section>
-      <section id="Proyectos" className="text-gray-600 body-font">
-  <h1 className="text-black font-bold text-2xl text-center">Proyectos</h1>
-  <div className="container px-6 py-24 mx-auto">
-    <div className="flex flex-wrap -mx-4 -mb-10 text-center">
-      <div className="sm:w-1/2 mb-10 px-4">
+      <section id="Proyectos" className="text-gray-600 body-font bg-gray-100 py-24">
+  <h1 className="text-black font-bold text-3xl text-center mb-12">Proyectos</h1>
+
+  <div className="container mx-auto px-6">
+    <div className="flex flex-col md:flex-row md:space-x-8 justify-center items-center">
+      
+      {/* Portafolio */}
+      <div className="w-full md:w-1/2 max-w-xl p-6 text-center bg-white rounded-lg shadow-lg mb-10 md:mb-0">
         <div className="rounded-lg h-64 overflow-hidden">
           <img 
-            alt="content"
-            className="hover:text-[#070707] transition-transform hover:scale-110 transform inline-block duration-300 object-cover object-center h-full w-full"
+            alt="Portafolio"
+            className="hover:scale-110 transition-transform duration-300 object-cover object-center h-full w-full"
             src={porta}
           />
         </div>
-        
-        <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+        <h2 className="text-2xl font-medium text-gray-900 mt-6 mb-3">
           Portafolio
         </h2>
         <p className="leading-relaxed text-base">
           Proyecto de portafolio propio.
         </p>
-
-        {/* Contenedor de los íconos alineados */}
         <div className="flex justify-center items-center gap-4 mt-4">
           <img src={iconos} alt="Icono 1" className="w-10 h-10" />
           <img src={iconos4} alt="Icono 2" className="w-10 h-10" />
         </div>
-
         <a
           href="https://github.com/josewolfclyro/wolfclyro"
           rel="noopener noreferrer"
@@ -256,46 +255,42 @@ export default function Hero() {
           </button>
         </a>
       </div>
+
+      {/* Calculadora */}
+      <div className="w-full md:w-1/2 max-w-xl p-6 text-center bg-white rounded-lg shadow-lg">
+        <div className="rounded-lg h-64 overflow-hidden">
+          <img 
+            alt="Calculadora"
+            className="hover:scale-110 transition-transform duration-300 object-cover object-center h-full w-full"
+            src={calcu}
+          />
+        </div>
+        <h2 className="text-2xl font-medium text-gray-900 mt-6 mb-3">
+          Calculadora
+        </h2>
+        <p className="leading-relaxed text-base">
+          Prácticas de JavaScript.
+        </p>
+        <div className="flex justify-center items-center gap-4 mt-4">
+          <img src={iconos5} alt="Icono 1" className="w-10 h-10" />
+          <img src={iconos6} alt="Icono 2" className="w-10 h-10" />
+          <img src={iconos3} alt="Icono 3" className="w-10 h-10" />
+        </div>
+        <a
+          href="https://github.com/josewolfclyro/calculadorajs"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <button className="flex items-center gap-2 mx-auto mt-6 text-white bg-blue-600 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+            <i className="bi bi-github"></i>
+            Repositorio
+          </button>
+        </a>
+      </div>
     </div>
-    <br/>
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-  <div className="w-full max-w-xl p-6 text-center bg-white rounded-lg shadow-lg">
-    <div className="rounded-lg h-64 overflow-hidden">
-      <img 
-        alt="content"
-        className="hover:text-[#070707] transition-transform hover:scale-110 transform duration-300 object-cover object-center h-full w-full"
-        src={calcu}
-      />
-    </div>
-
-    <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
-      Calculadora
-    </h2>
-    <p className="leading-relaxed text-base">
-      Prácticas de JavaScript.
-    </p>
-
-    <div className="flex justify-center items-center gap-4 mt-4">
-      <img src={iconos5} alt="Icono 1" className="w-10 h-10" />
-      <img src={iconos6} alt="Icono 2" className="w-10 h-10" />
-      <img src={iconos3} alt="Icono 3" className="w-10 h-10" />
-    </div>
-
-    <a
-      href="https://github.com/josewolfclyro/calculadorajs"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <button className="flex items-center gap-2 mx-auto mt-6 text-white bg-blue-600 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
-        <i className="bi bi-github"></i>
-        Repositorio
-      </button>
-    </a>
-  </div>
-</div>
-
   </div>
 </section>
+
 <footer className="text-gray-600 body-font bg-white">
   <div className="container px-5 py-8 mx-auto flex flex-col sm:flex-row items-center justify-between">
     
