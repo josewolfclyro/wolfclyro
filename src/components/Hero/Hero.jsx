@@ -11,7 +11,7 @@ import iconos6 from "../../assets/css.png";
 import iconos7 from "../../assets/kotlin.png";
 import cv from "./../../assets/cv.pdf";
 import porta from "../../assets/printporta.jpg"
-
+import calcu from "../../assets/calculadora.jpg"
 export default function Hero() {
   const handleEmailClick = () => {
     navigator.clipboard.writeText("josewolf2324@gmail.com");
@@ -50,8 +50,8 @@ export default function Hero() {
                 <p className="text-sm">bash</p>
               </div>
               <div class="mt-4">
-                <p class="text-green-400">
-                  Estas son algunas de las tecnologias que utilizo
+                <p className="text-green-400">
+                  Estas son algunas de las tecnologias que utilizo.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4  items-center ">
                   <img
@@ -231,6 +231,7 @@ export default function Hero() {
             src={porta}
           />
         </div>
+        
         <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
           Portafolio
         </h2>
@@ -256,6 +257,43 @@ export default function Hero() {
         </a>
       </div>
     </div>
+    <br/>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+  <div className="w-full max-w-xl p-6 text-center bg-white rounded-lg shadow-lg">
+    <div className="rounded-lg h-64 overflow-hidden">
+      <img 
+        alt="content"
+        className="hover:text-[#070707] transition-transform hover:scale-110 transform duration-300 object-cover object-center h-full w-full"
+        src={calcu}
+      />
+    </div>
+
+    <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
+      Calculadora
+    </h2>
+    <p className="leading-relaxed text-base">
+      Prácticas de JavaScript.
+    </p>
+
+    <div className="flex justify-center items-center gap-4 mt-4">
+      <img src={iconos5} alt="Icono 1" className="w-10 h-10" />
+      <img src={iconos6} alt="Icono 2" className="w-10 h-10" />
+      <img src={iconos3} alt="Icono 3" className="w-10 h-10" />
+    </div>
+
+    <a
+      href="https://github.com/josewolfclyro/calculadorajs"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <button className="flex items-center gap-2 mx-auto mt-6 text-white bg-blue-600 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+        <i className="bi bi-github"></i>
+        Repositorio
+      </button>
+    </a>
+  </div>
+</div>
+
   </div>
 </section>
 <footer className="text-gray-600 body-font bg-white">
