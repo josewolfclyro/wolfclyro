@@ -12,6 +12,8 @@ import iconos7 from "../../assets/kotlin.png";
 import cv from "./../../assets/cv.pdf";
 import porta from "../../assets/printporta.jpg"
 import calcu from "../../assets/calculadora.jpg"
+import tienda from "../../assets/kamentoys.jpg"
+
 export default function Hero() {
   const handleEmailClick = () => {
     navigator.clipboard.writeText("josewolf2324@gmail.com");
@@ -278,6 +280,36 @@ export default function Hero() {
         </div>
         <a
           href="https://github.com/josewolfclyro/calculadorajs"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <button className="flex items-center gap-2 mx-auto mt-6 text-white bg-blue-600 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+            <i className="bi bi-github"></i>
+            Repositorio
+          </button>
+        </a>
+      </div>
+       {/* tienda */}
+       <div className="w-full md:w-1/2 max-w-xl p-6 text-center bg-white rounded-lg shadow-lg mb-10 md:mb-0">
+        <div className="rounded-lg h-64 overflow-hidden">
+          <img 
+            alt="tienda"
+            className="hover:scale-110 transition-transform duration-300 object-cover object-center h-full w-full"
+            src={tienda}
+          />
+        </div>
+        <h2 className="text-2xl font-medium text-gray-900 mt-6 mb-3">
+          Tienda con formularios
+        </h2>
+        <p className="leading-relaxed text-base">
+          Proyecto para una tienda simple con formularios
+        </p>
+        <div className="flex justify-center items-center gap-4 mt-4">
+          <img src={iconos} alt="Icono 1" className="w-10 h-10" />
+          <img src={iconos4} alt="Icono 2" className="w-10 h-10" />
+        </div>
+        <a
+          href="https://github.com/josewolfclyro/kamentoys"
           rel="noopener noreferrer"
           target="_blank"
         >
